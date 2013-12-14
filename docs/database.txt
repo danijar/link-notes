@@ -1,0 +1,15 @@
+Database Structure
+==================
+
++----------+       +-----------+ 1   * +-------+
+| user     |-------| task      |=======| edges |
++----------+ 1   * +-----------+ 1   * +-------+
+| id       |       | id        |       | id    |
+| name     |       | user      |       | from  |
+| email    |       | name      |       | to    |
+| password |       | text      |       +-------+
++----------+       | completed |
+                   | open      |
+                   | due       |
+                   | parent    |
+                   +-----------+
